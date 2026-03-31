@@ -13,7 +13,8 @@
                 "ms-azuretools.vscode-containers"
             ],
             "settings": {
-                "python.defaultInterpreterPath": "/app/.venv/bin python",
+                // CORRECCIÓN AQUÍ: Cambiado "/app/.venv/bin python" por "/app/.venv/bin/python"
+                "python.defaultInterpreterPath": "/app/.venv/bin/python",
                 "jupyter.notebookFileRoot": "${workspaceFolder}"
             }
         }
