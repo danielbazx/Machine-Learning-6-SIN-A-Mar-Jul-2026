@@ -14,10 +14,10 @@
             ],
             "settings": {
                 // CORRECCIÓN AQUÍ: Cambiado "/app/.venv/bin python" por "/app/.venv/bin/python"
-                "python.defaultInterpreterPath": "/app/.venv/bin/python",
+                "python.defaultInterpreterPath": "/app/.danielenv/bin/python",
                 "jupyter.notebookFileRoot": "${workspaceFolder}"
             }
         }
     },
-    "postCreateCommand": "echo 'source /app/.venv/bin/activate' >> ~/.bashrc"
+    "postCreateCommand": "echo 'source /app/.danielenv/bin/activate' >> ~/.bashrc"
 }
