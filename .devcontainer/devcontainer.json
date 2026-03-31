@@ -1,0 +1,23 @@
+{
+    "name": "ML Workshop 2 - Work Environment",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-toolsai.jupyter",
+                "ms-toolsai.jupyter-renderers",
+                "charliemarsh.ruff",
+                "ms-azuretools.vscode-containers"
+            ],
+            "settings": {
+                // CORRECCIÓN AQUÍ: Cambiado "/app/.venv/bin python" por "/app/.venv/bin/python"
+                "python.defaultInterpreterPath": "/app/.danielenv/bin/python",
+                "jupyter.notebookFileRoot": "${workspaceFolder}"
+            }
+        }
+    },
+    "postCreateCommand": "echo 'source /app/.danielenv/bin/activate' >> ~/.bashrc"
+}
